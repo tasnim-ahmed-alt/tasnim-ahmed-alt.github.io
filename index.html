@@ -62,7 +62,7 @@
     .story { max-width: 62ch; }
     blockquote { margin: 0; padding: 16px 20px; background: var(--card); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; font-style: italic; }
     .quotes { display: grid; gap: 14px; margin-top: 8px; }
-    .quotes cite { display: block; margin-top: 6px; font-style: normal; font-family: system-ui, sans-serif; font-size: 0.85rem; color: var(--muted); }
+    .quotes .who { display: block; margin-top: 6px; font-style: normal; font-family: system-ui, sans-serif; font-size: 0.85rem; color: var(--muted); }
 
     footer { border-top: 1px solid var(--line); text-align: center; padding: 26px 24px; color: var(--muted); font-family: system-ui, sans-serif; font-size: 0.9rem; }
     @media (max-width: 520px) { .btn.ghost { margin-left: 0; margin-top: 10px; } }
@@ -78,7 +78,6 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#reputation">Reputation</a></li>
-        <li><a href="Ahmed_Tasnim_Resume.pdf">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -94,7 +93,7 @@
       <p class="statement">I am an upbeat, resilient accounting student at Rutgers Business School who stays calm under pressure and explains complex ideas so people actually understand them.</p>
       <p class="meta">Accounting and Accounting Information Systems &bull; Rutgers Business School &bull; GPA 3.4 &bull; Dean's List 2025 &bull; Working toward the CPA</p>
       <a class="btn" href="#projects">See my work</a>
-      <a class="btn ghost" href="Ahmed_Tasnim_Resume.pdf">View my resume</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
       </div>
       <img class="headshot" src="headshot.jpg" alt="Headshot of Tasnim Ahmed smiling in a black blazer and white collared shirt">
       </div>
@@ -141,25 +140,21 @@
       <article class="project">
         <h3>KPMG Audit Job Simulation (Forage, September 2026)</h3>
         <p>I analyzed client financial records with Clara, Alteryx, DataSnipper, and Excel and finished the review in 2 hours, half the estimated time, without losing accuracy. I also built an audit plan, performed accounts receivable procedures, mapped the client's process in a walkthrough, and presented my findings in a recorded video.</p>
-        <a href="Ahmed_Tasnim_Resume.pdf">See this project on my resume</a>
       </article>
 
       <article class="project">
         <h3>Form 10-K Analysis of E.L.F. Beauty (Financial Accounting)</h3>
         <p>I studied a public company's 10-K, including its sources and uses of capital, the auditor's opinion, and the strength of its internal controls. I then presented a stock purchase recommendation based on the financial statements.</p>
-        <a href="Ahmed_Tasnim_Resume.pdf">See this project on my resume</a>
       </article>
 
       <article class="project">
         <h3>Cost-Volume-Profit Model (Managerial Accounting)</h3>
         <p>I built a dynamic Excel model for a simulated client that forecasts multiproduct profitability. Every assumption flows through the whole analysis, so the file works as a reusable what-if planning tool.</p>
-        <a href="Ahmed_Tasnim_Resume.pdf">See this project on my resume</a>
       </article>
 
       <article class="project">
         <h3>Kaito Bubble Tea consulting project (Management Skills)</h3>
         <p>Over a semester I interviewed staff, visited the shop, and surveyed a 12-employee business to find the cause of its communication and output problems. I recommended a two-way feedback and OKR system and presented it to the owners.</p>
-        <a href="Ahmed_Tasnim_Resume.pdf">See this project on my resume</a>
       </article>
 
       <h3 style="margin-top:34px;">Creative work</h3>
@@ -185,8 +180,8 @@
         <p>As a Rutgers Orientation Leader in summer 2026, I presented to 1,000+ incoming students, led 20+ groups, and personally helped 300+ students find answers on the spot. I sprained my ankle on the job, wore a brace through tours and flash mob dances, and asked people to sign my cast instead of hiding it. I would rather be known for showing up with a smile and getting it done while still looking after my health.</p>
       </div>
       <div class="quotes">
-        <blockquote>Very charismatic and nice young lady. Did her job perfectly.<cite>Student feedback</cite></blockquote>
-        <blockquote>My orientation leader went above and beyond to make us orientees feel safe and welcome on campus.<cite>Student feedback</cite></blockquote>
+        <blockquote>Very charismatic and nice young lady. Did her job perfectly.<span class="who">Student feedback</span></blockquote>
+        <blockquote>My orientation leader went above and beyond to make us orientees feel safe and welcome on campus.<span class="who">Student feedback</span></blockquote>
       </div>
     </section>
 
