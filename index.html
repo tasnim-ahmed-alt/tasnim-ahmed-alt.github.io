@@ -44,6 +44,11 @@
     .btn.ghost { background: transparent; color: var(--accent); border: 2px solid var(--accent); margin-left: 8px; }
     .btn.ghost:hover { background: var(--accent); color: #fff; }
 
+    .hero-wrap { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+    .hero-text { flex: 1; }
+    .headshot { width: 260px; height: 330px; object-fit: cover; object-position: center top; border-radius: 12px; border: 4px solid #fff; box-shadow: 0 6px 20px rgba(31,42,55,0.15); flex-shrink: 0; }
+    @media (max-width: 700px) { .hero-wrap { flex-direction: column-reverse; align-items: flex-start; gap: 24px; } .headshot { width: 200px; height: 250px; } }
+
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
     .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 20px 22px; }
     .card p { margin: 0; font-family: system-ui, sans-serif; font-size: 0.96rem; }
@@ -83,11 +88,16 @@
 
     <!-- PERSONAL STATEMENT -->
     <section class="hero" id="about">
+      <div class="hero-wrap">
+      <div class="hero-text">
       <h1>Hi, I'm Tasnim.</h1>
       <p class="statement">I am an upbeat, resilient accounting student at Rutgers Business School who stays calm under pressure and explains complex ideas so people actually understand them.</p>
       <p class="meta">Accounting and Accounting Information Systems &bull; Rutgers Business School &bull; GPA 3.4 &bull; Dean's List 2025 &bull; Working toward the CPA</p>
       <a class="btn" href="#projects">See my work</a>
       <a class="btn ghost" href="Ahmed_Tasnim_Resume.pdf">View my resume</a>
+      </div>
+      <img class="headshot" src="headshot.jpg" alt="Headshot of Tasnim Ahmed smiling in a black blazer and white collared shirt">
+      </div>
     </section>
 
     <!-- SKILLS -->
