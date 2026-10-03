@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tasnim Ahmed | Portfolio</title>
+  <meta name="description" content="Portfolio of Tasnim Ahmed, an Accounting and Accounting Information Systems student at Rutgers Business School.">
+  <style>
+    :root {
+      --ink: #1f2a37;
+      --muted: #5b6776;
+      --paper: #f7f8fa;
+      --card: #ffffff;
+      --line: #dfe3e8;
+      --accent: #b3203a;
+      --accent-dark: #8a1830;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--ink); background: var(--paper); line-height: 1.65; }
+    a { color: var(--accent); }
+    a:hover { color: var(--accent-dark); }
+    a:focus-visible, .btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+    header.site { position: sticky; top: 0; z-index: 10; background: rgba(247,248,250,0.96); border-bottom: 1px solid var(--line); }
+    header.site nav { max-width: 880px; margin: 0 auto; padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .brand { font-weight: 700; font-size: 1.15rem; color: var(--ink); text-decoration: none; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 22px; flex-wrap: wrap; }
+    nav ul a { text-decoration: none; color: var(--muted); font-family: system-ui, sans-serif; font-size: 0.95rem; }
+    nav ul a:hover { color: var(--accent); }
+
+    main { max-width: 880px; margin: 0 auto; padding: 0 24px 60px; }
+    section { padding: 56px 0 8px; }
+    h1, h2, h3 { line-height: 1.2; margin: 0 0 14px; }
+    h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); letter-spacing: -0.02em; }
+    h2 { font-size: 1.7rem; padding-bottom: 10px; border-bottom: 2px solid var(--accent); display: inline-block; margin-bottom: 24px; }
+    h3 { font-size: 1.15rem; }
+
+    .hero { padding-top: 72px; }
+    .statement { font-size: clamp(1.15rem, 2.6vw, 1.45rem); max-width: 44ch; margin: 0 0 22px; }
+    .meta { font-family: system-ui, sans-serif; color: var(--muted); font-size: 0.95rem; margin: 0 0 26px; }
+    .btn { display: inline-block; padding: 11px 22px; border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; font-family: system-ui, sans-serif; font-weight: 600; font-size: 0.95rem; }
+    .btn:hover { background: var(--accent-dark); color: #fff; }
+    .btn.ghost { background: transparent; color: var(--accent); border: 2px solid var(--accent); margin-left: 8px; }
+    .btn.ghost:hover { background: var(--accent); color: #fff; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 20px 22px; }
+    .card p { margin: 0; font-family: system-ui, sans-serif; font-size: 0.96rem; }
+    .card ul { margin: 0; padding-left: 18px; font-family: system-ui, sans-serif; font-size: 0.97rem; }
+    .card li { margin-bottom: 4px; }
+
+    .project { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 8px; padding: 22px 24px; margin-bottom: 18px; }
+    .project p { margin: 0 0 12px; }
+    .project a { font-family: system-ui, sans-serif; font-weight: 600; font-size: 0.95rem; }
+
+    .story { max-width: 62ch; }
+    blockquote { margin: 0; padding: 16px 20px; background: var(--card); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; font-style: italic; }
+    .quotes { display: grid; gap: 14px; margin-top: 8px; }
+    .quotes cite { display: block; margin-top: 6px; font-style: normal; font-family: system-ui, sans-serif; font-size: 0.85rem; color: var(--muted); }
+
+    footer { border-top: 1px solid var(--line); text-align: center; padding: 26px 24px; color: var(--muted); font-family: system-ui, sans-serif; font-size: 0.9rem; }
+    @media (max-width: 520px) { .btn.ghost { margin-left: 0; margin-top: 10px; } }
+  </style>
+</head>
+<body>
+
+  <header class="site">
+    <nav aria-label="Main">
+      <a class="brand" href="#top">Tasnim Ahmed</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#reputation">Reputation</a></li>
+        <li><a href="Ahmed_Tasnim_Resume.pdf">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- PERSONAL STATEMENT -->
+    <section class="hero" id="about">
+      <h1>Hi, I'm Tasnim.</h1>
+      <p class="statement">I am an upbeat, resilient accounting student at Rutgers Business School who stays calm under pressure and explains complex ideas so people actually understand them.</p>
+      <p class="meta">Accounting and Accounting Information Systems &bull; Rutgers Business School &bull; GPA 3.4 &bull; Dean's List 2025 &bull; Working toward the CPA</p>
+      <a class="btn" href="#projects">See my work</a>
+      <a class="btn ghost" href="Ahmed_Tasnim_Resume.pdf">View my resume</a>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Accounting and audit tools</h3>
+          <ul>
+            <li>Microsoft Excel (advanced VLOOKUP, pivot tables, cost and ROI analysis)</li>
+            <li>Clara, Alteryx, and DataSnipper</li>
+            <li>Form 10-K and financial statement analysis</li>
+            <li>Cost-volume-profit modeling</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Technology</h3>
+          <ul>
+            <li>HTML5 and basic website design</li>
+            <li>Java</li>
+            <li>Adobe InDesign, Illustrator, and Photoshop</li>
+            <li>Word and PowerPoint</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Communication and leadership</h3>
+          <ul>
+            <li>Professional storytelling and live presentations</li>
+            <li>Simplifying complex ideas, including tutoring in financial accounting</li>
+            <li>Leading 20+ orientation groups</li>
+            <li>Calm, accountable, and reliable under pressure</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>KPMG Audit Job Simulation (Forage, September 2026)</h3>
+        <p>I analyzed client financial records with Clara, Alteryx, DataSnipper, and Excel and finished the review in 2 hours, half the estimated time, without losing accuracy. I also built an audit plan, performed accounts receivable procedures, mapped the client's process in a walkthrough, and presented my findings in a recorded video.</p>
+        <a href="Ahmed_Tasnim_Resume.pdf">See this project on my resume</a>
+      </article>
+
+      <article class="project">
+        <h3>Form 10-K Analysis of E.L.F. Beauty (Financial Accounting)</h3>
+        <p>I studied a public company's 10-K, including its sources and uses of capital, the auditor's opinion, and the strength of its internal controls. I then presented a stock purchase recommendation based on the financial statements.</p>
+        <a href="Ahmed_Tasnim_Resume.pdf">See this project on my resume</a>
+      </article>
+
+      <article class="project">
+        <h3>Cost-Volume-Profit Model (Managerial Accounting)</h3>
+        <p>I built a dynamic Excel model for a simulated client that forecasts multiproduct profitability. Every assumption flows through the whole analysis, so the file works as a reusable what-if planning tool.</p>
+        <a href="Ahmed_Tasnim_Resume.pdf">See this project on my resume</a>
+      </article>
+
+      <article class="project">
+        <h3>Kaito Bubble Tea consulting project (Management Skills)</h3>
+        <p>Over a semester I interviewed staff, visited the shop, and surveyed a 12-employee business to find the cause of its communication and output problems. I recommended a two-way feedback and OKR system and presented it to the owners.</p>
+        <a href="Ahmed_Tasnim_Resume.pdf">See this project on my resume</a>
+      </article>
+
+      <h3 style="margin-top:34px;">Creative work</h3>
+
+      <article class="project">
+        <h3>Hot Air, a climate myth-busting podcast</h3>
+        <p>A short, story-driven podcast that breaks down one climate myth per episode with humor and evidence-based reporting. I designed it for young adults who feel overwhelmed by mixed messages, as a proposal for my Climate Change in Media class.</p>
+        <a href="https://audiomack.com/ta655/song/hot-air-busting-climate-myths">Listen to Hot Air</a>
+      </article>
+
+      <article class="project">
+        <h3>Playing House in College, a dating podcast episode</h3>
+        <p>An episode for college women dealing with situationships and mixed signals, told like advice from your most real friend, to help listeners spot unhealthy patterns and value themselves more.</p>
+        <a href="https://audiomack.com/ta655/song/playing-house-in-college-catching-feelings-in-the-wrong-place-1">Listen to the episode</a> &nbsp;|&nbsp;
+        <a href="https://tasnimahmed5.wordpress.com/">Read my blog</a>
+      </article>
+    </section>
+
+    <!-- REPUTATION -->
+    <section id="reputation">
+      <h2>Reputation</h2>
+      <div class="story">
+        <p>As a Rutgers Orientation Leader in summer 2026, I presented to 1,000+ incoming students, led 20+ groups, and personally helped 300+ students find answers on the spot. I sprained my ankle on the job, wore a brace through tours and flash mob dances, and asked people to sign my cast instead of hiding it. I would rather be known for showing up with a smile and getting it done while still looking after my health.</p>
+      </div>
+      <div class="quotes">
+        <blockquote>Very charismatic and nice young lady. Did her job perfectly.<cite>Student feedback</cite></blockquote>
+        <blockquote>My orientation leader went above and beyond to make us orientees feel safe and welcome on campus.<cite>Student feedback</cite></blockquote>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email me at <a href="mailto:ta655@rutgers.edu">ta655@rutgers.edu</a> or connect with me on <a href="https://www.linkedin.com/in/tasnimahmed">LinkedIn</a>.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Tasnim Ahmed &bull; Built with HTML and hosted on GitHub Pages
+  </footer>
+
+</body>
+</html>
